@@ -1,0 +1,30 @@
+doctype html 
+html(lang="ru-RU")
+    head 
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        link(rel="stylesheet", href="styles/app.css")
+        link(rel="stylesheet", type="text/css", href="libs/slick.css")
+        link(rel="stylesheet", type="text/css", href="libs/slick-theme.css")
+        title Клапан прямого действия MCD 32/2202-PS 32.011.115 направляющий
+    body
+
+    include ../layout/header.pug
+    
+    
+    main
+        
+        include ../layout/item.pug
+        include ../layout/carousel.pug
+        include ../layout/carousel2.pug
+        include ../layout/carousel3.pug
+        include ../layout/feedback.pug
+        include ../layout/footer.pug
+    
+
+
+    script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+    script(type="text/javascript", src="libs/slick.js")
+    script(src="scripts/main.js") 
+

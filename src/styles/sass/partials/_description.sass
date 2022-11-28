@@ -1,0 +1,149 @@
+.desc
+    font-size: 18px
+    padding-bottom: 50px
+    min-height: 300px
+    +mw(800)
+        font-size: 17px
+    +mw(600)
+        font-size: 16px
+
+    .tabs__nav
+        display: flex
+        justify-content: flex-start
+        overflow-x: auto
+        border-bottom: 1px #e4e4e4 solid
+
+    .tabs__btn
+            
+            padding: 5px 25px 10px
+            cursor: pointer
+            transition: .2s
+            color: #383838
+            border-bottom: 2px transparent solid
+
+            &:hover
+                color: #000
+                font-weight: 700
+
+            &--active
+                color: #000
+                font-weight: 700
+                border-bottom: 2px #000 solid
+
+    .tabs__content.main-panes
+        padding-top: 20px
+        padding-left: 25px
+        padding-right: 25px
+
+
+        .description
+            p
+                padding-bottom: 12px
+
+            h2
+                padding-top: 10px
+                padding-bottom: 20px
+                font-size: 22px
+
+            ul
+                padding: 25px 25px 15px
+
+
+                li
+                    margin-bottom: 12px
+                    position: relative
+
+                    &:before
+                        content: "\2022"
+                        display: block
+                        position: absolute
+                        left: -15px
+                        // top: 50%
+                        // transform: translateY(-50%)
+
+        cite
+            display: flex
+            justify-content: space-around
+            border: 2px solid $orange
+            border-radius: 10px
+            padding-bottom: 15px
+            padding-top: 15px
+
+            +mw(680)
+                flex-direction: column
+                align-items: center
+
+            table
+                width: 45%
+                border-collapse: collapse
+                font-style: normal
+                +mw(680)
+                    width: 90%
+
+                tbody
+                    
+                    tr
+                        height: 30px
+                        border-bottom: 1px solid #dddddd
+                    
+                        td
+                            padding: 15px 0
+                            
+
+                            &[itemprop="name"]
+                                font-weight: 700
+
+                            &[itemprop="value"]
+                                text-align: right
+
+        .description,
+        .drawings
+
+            table
+                border: 2px solid $orange
+                border-radius: 10px
+                padding: 15px 20px
+                width: 100%
+                font-style: normal
+                margin: 30px auto
+
+                tbody
+                    tr
+                        height: 30px
+                        border-bottom: 1px solid #dddddd
+                        position: relative
+
+                        &:after
+                            content: ""
+                            position: absolute
+                            bottom: 0px
+                            left: 0
+                            display: block
+                            height: 1px
+                            width: 100%
+                            background: #dddddd
+                    
+                        td
+                            padding: 15px 0
+                            
+
+                            &[itemprop="name"]
+                                font-weight: 700
+
+                            &[itemprop="value"]
+                                text-align: right
+    .tabs__pane
+        display: none
+
+    .tabs__pane--show
+        display: block
+
+
+    .draw-panes
+
+        img
+            max-width: 100%
+            display: block
+            margin: 0 auto
+            padding: 20px 0 30px
+

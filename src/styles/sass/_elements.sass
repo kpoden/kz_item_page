@@ -1,0 +1,241 @@
+svg
+    max-width: 30px
+    max-height: 30px
+
+input::placeholder
+    font-family: MyriadPro
+
+
+.btn
+    max-height: 40px
+    border-radius: $btn-border-radius
+    cursor: pointer
+    transition: .2s
+
+
+[data-tooltip] 
+    position: relative; /* Относительное позиционирование */ 
+   
+[data-tooltip]::after 
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 100px; /* Ширина подсказки */
+    left: 50%; 
+    top: -160%; /* Положение подсказки */
+    transform: translateX(-50%)
+    background: #4b4b4b; /* цвет фона */
+    border-radius: $btn-border-radius
+    color: #fff; /* Цвет текста */
+    font-weight: 300 !important
+    font-size: 12px
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: .4s; /* Время появления подсказки */
+    z-index: 10000;
+    text-align: center
+
+   
+[data-tooltip]:hover::after 
+    opacity: 1 /* Показываем подсказку */
+    top: -130% /* Положение подсказки */
+
+[data-tooltip].below::after
+    top: 160% /* Положение подсказки */
+
+[data-tooltip].below:hover::after
+    top: 130% /* Положение подсказки */
+
+   
+.btnCart
+    display: flex
+
+    &.item__info-cart
+        flex-direction: column
+                
+    +mw(890)
+        padding-bottom: 25px
+
+    .btn-cart
+        width: 190px
+        height: 40px
+        background-color: $orange
+        cursor: pointer
+        color: #fff
+        font-size: 16px
+        font-weight: 700
+        display: flex
+        align-items: center
+        padding-left: 20px
+        transition: .2s
+        margin-right: 15px
+        margin-bottom: 15px
+        &:hover
+            filter: brightness(115%)
+
+        &-icon
+            height: 26px
+            fill: #fff
+            transition: .2s
+
+            &--checked
+                max-width: 20px
+                display: none
+                fill: #fff 
+
+        &-text
+            line-height: 40px
+            padding-left: 15px
+
+            &--checked
+                line-height: 40px
+                padding-left: 25px
+                display: none
+
+    .one-click
+        background-color: #a0cb00
+
+        .btn-cart-icon
+            fill: #fff
+            stroke: #fff
+
+        .btn-cart-text
+            padding-left: 5px
+
+    .incart 
+        background: $green
+        .btn-cart-icon
+            display: none
+
+            &--checked
+                display: block
+
+        .btn-cart-text
+            display: none
+
+            &--checked
+                display: block
+
+.btn-fav
+    width: 40px
+    height: 40px
+    background-color: #dddddd
+    cursor: pointer
+    transition: .2s
+    border: 1px solid #ddd
+    z-index: 999
+
+    &-icon
+        fill: #ffffff
+        stroke: #fff
+        max-width: 22px
+        transition: .2s
+
+    &:hover
+        filter: brightness(103%)
+
+.fav
+    .btn-fav-icon
+        stroke: $orange !important
+        fill: $orange 
+    
+
+    &:hover
+        filter: brightness(103%)
+
+
+.carousel__cart.btnCart
+       
+    .btn-cart
+        width: 110px
+        padding-left: 5px
+        font-size: 12px
+        margin-right: 0
+
+        +mw(480)
+            width: 48px
+
+        &-icon
+            max-width: 28px !important
+
+            &--checked
+                line-height: 20px
+                padding-left: 0px
+                max-width: 18px
+                max-height: 20px
+
+                +mw(480)
+                    max-width: 30px;
+        
+        &-text
+            line-height: 20px
+            padding-left: 15px
+            
+            &--checked
+                padding-left: 20px
+
+                +mw(480)
+                    display: none
+
+            +mw(480)
+                display: none
+
+    .one-click
+        margin-left: 15px
+        
+        .btn-cart-text
+            padding-left: 0
+            width: 70%
+            margin: 0 auto
+            line-height: 18px
+
+
+
+  
+.alert-msg
+    font-size: 14px
+    position: fixed
+    top: 20px
+    right: 30px
+    width: 150px
+    text-align: center
+    background: #4b4b4b
+    border-radius: $btn-border-radius
+    color: #fff
+    font-weight: 300 !important
+    padding: 0.5em
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
+    pointer-events: none
+    border: 1px $green solid
+    z-index: 10000
+    opacity: 0
+    visibility: hidden
+    transition: .3s
+
+.show-alert
+    opacity: 1
+    visibility: visible
+
+
+.catalog__close 
+    position: fixed
+    top: 20px
+    right: 40px
+    background-color: #ddd
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-image: url(../images/svg/close.svg)
+    background-repeat: no-repeat
+    background-size: 16px
+    background-position: center
+    cursor: pointer
+    transition: .2s
+
+    +mw(580)
+        right: 30px
+
+    &:hover
+        background-color: #aaa
+

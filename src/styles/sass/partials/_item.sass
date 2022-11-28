@@ -1,0 +1,315 @@
+.item
+    &__wrapper
+    
+    &__header
+        padding-bottom: 35px
+        font-size: 28px
+        font-weight: 700
+
+        +mw(650)
+            font-size: 25px
+        +mw(650)
+            font-size: 22px
+
+
+    &__main
+        display: flex
+        padding-bottom: 50px
+
+        +mw(680)
+            flex-direction: column
+            align-items: center
+
+    &__display
+        width: 60%
+        
+        +mw(600)
+            width: 100%
+
+    
+
+
+    .slider
+        display: flex
+        justify-content: flex-start
+
+        +mw(990)
+            flex-direction: column-reverse
+    
+        &__nav
+            width: 20%
+            padding-top: 0
+            padding-bottom: 0
+
+            +mw(990)
+                width: 360px
+                min-width: 300px
+                margin: 0 30px 0 30px
+ 
+            +mw(600)
+                width: 95%
+                margin: 0 auto
+                padding: 30px 12px 30px 30px !important
+
+            +mw(420)
+                padding: 10px 12px 10px 30px !important
+
+        &__nav-item
+            width: 70px !important
+            height: 70px !important
+            border: 2px solid #999
+            display: flex !important
+            align-items: center !important
+            border-radius: 12px
+            overflow: hidden
+            margin-bottom: 0.5em
+            cursor: pointer
+            +mw(600)
+                width: 62px !important
+                height: 62px !important
+
+            img
+                width: 100%
+                height: auto
+                margin: auto
+
+
+        &__main
+            width: 380px
+            height: 380px
+            right: 0
+            position: relative
+
+            +mw(600)
+                width: 100%
+            
+            
+
+        &__img-wrap
+            height: 380px
+            width: 380px
+            +mw(600)
+                width: 480px
+            
+            iframe
+                background: url(../images/loader4.gif) no-repeat
+                background-size: cover
+                background-position: center center
+                border-radius: 10px
+
+
+
+
+        &__img
+            max-width: 100%
+            max-height: 100%
+            display: block
+            margin: auto
+            border-radius: 10px
+
+            
+
+        // Стили для slick для главного слайдера
+        .slider__main
+            .slick-arrow
+                display: block !important
+                width: 44px !important
+                height: 44px
+                background-color: rgba(30, 30, 30, .8)
+                background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiLz48L3N2Zz4=)
+                background-repeat: no-repeat
+                background-position: 50%
+                background-size: 24px 24px
+                border: none
+                border-radius: 0 !important
+                pointer-events: painted
+                transition: .2s
+                opacity: .8
+                position: absolute !important
+                z-index: 100
+                &:hover
+                    opacity: 1
+
+            .slick-prev
+                top: 50%
+                transform: translateY(-50%) scaleX(-1)
+                left: 0
+
+            .slick-next
+                top: 50%
+                transform: translateY(-50%)
+                right: 0
+
+            .slick-prev:before
+                content: '' !important
+                
+            .slick-next:before
+                content: '' !important
+
+
+
+            
+        // Стили для slick для слайдера навигации
+        .slider__nav
+
+            .slick-current
+                .slider__nav-item
+                    border: 3px solid $orange
+
+            .slick-arrow
+                left: 31%
+
+
+
+            .slick-prev
+                background: url(../images/svg/arrow.svg)
+                position: absolute
+                top: 0px
+                transform: translateX(-50%) rotate(270deg)
+
+                &:before
+                    content: ''
+
+                +mw(990)
+                    left: -20px
+                    top: 47%
+                    transform: translateY(-50%) rotate(180deg)
+
+                +mw(600)
+                    left: 0px
+
+            .slick-next
+                background: url(../images/svg/arrow.svg)
+                position: absolute
+                top: 93% 
+                transform: translateX(-50%) rotate(90deg)
+
+                &:before
+                    content: ''
+
+                +mw(990)
+                    left: calc(100% - 20px)
+                    top: 47%
+                    transform: translateY(-50%) rotate(0deg)
+                +mw(600)
+                    left: calc(100% - 10px)
+
+            .slick-disabled
+                opacity: 0.6
+
+    &__info
+        display: flex
+        width: 50%
+        justify-content: space-between
+        max-height: 355px
+
+        +mw(890)
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+            max-height: none
+
+
+        &-main
+            .item__info-text
+                display: block
+
+        &-article
+            color: #797979
+            cursor: pointer
+            display: inline
+            font-size: 14px
+            background: #fff
+
+            &-wrap
+                display: flex
+
+        &-available
+            color: $green
+            font-size: 18px
+            font-weight: 700
+            padding: 20px 0 20px
+            display: block
+
+            +mw(420)
+                padding: 10px 0
+
+
+
+        &-link
+            a
+                display: flex
+                align-items: center
+                transform-style: .2s
+                &:hover
+                    color: $orange
+                    fill: $orange
+                svg
+                    margin-right: 15px
+                    width: 18px
+                .lorry-icon
+                    width: 22px
+
+        &-price-wrap
+            display: flex
+            align-items: flex-end
+            color: $green
+            padding: 15px 0 30px
+            justify-content: space-between
+            max-width: 190px
+
+        &-preprice
+            padding-bottom: 3px
+
+        &-price
+            font-size: 32px
+            font-weight: 700
+            color: $green
+            margin-right: auto
+
+
+            
+
+        &-logo
+            max-width: 150px
+            max-height: 100px
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            img
+                max-width: 100%
+                max-height: 100px
+
+            +mw(890)
+                padding-top: 32px
+
+
+        &-side
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            +mw(890)
+                flex-direction: column-reverse
+                align-items: center
+
+        &-sidelinks
+            text-align: center
+            padding-bottom: 7px
+            a
+                display: inline-block
+                margin-top: 25px
+                color: $orange
+                filter: brightness(80%)
+                border-bottom: 1px dotted 
+
+                &:first-child
+                    margin-top: 0
+
+
+                &:hover
+                    filter: brightness(100%)
+
+
+            +mw(890)
+                padding-bottom: 0
+                

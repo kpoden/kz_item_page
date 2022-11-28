@@ -1,0 +1,42 @@
+
+.header-bottom-wrapper
+    .header-bottom.container
+        .catalog
+            span.catalog-btn.btn
+                svg.catalog-btn__icon
+                    use(xlink:href="images/sprite.svg#catalog")
+                span.catalog-btn__text Каталог
+
+            include ../layout/catalog.pug
+                    
+        nav.header__menu.menu
+            ul.menu__list.container
+                li.menu__item 
+                    a(href="#") Спецтехника
+                li.menu__item 
+                    a(href="#") Запчасти
+                li.menu__item
+                    a(href="#") Ремонт
+                li.menu__item
+                    a(href="#") Изготовление
+                li.menu__item
+                    a(href="#") Литье
+                li.menu__item
+                    a(href="#") Контакты
+
+            span.menu__mobile Меню
+ 
+
+        form.searchMenu.formSearch(method="post", action="/search/")
+            label
+                input.search(id="btnSearch", type="text", name="search", placeholder="Поиск по каталогу")
+                span.search-btn
+
+        button.cartOnTop.cart-btn-top.btn(id="btnCart") 
+            
+            span.cart-btn-top__text Корзина
+            svg.cart-btn-top__icon
+                use(xlink:href="images/sprite.svg#cart")
+            span.itemCountOnCart 3
+
+        

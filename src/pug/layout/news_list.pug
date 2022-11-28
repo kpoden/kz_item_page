@@ -1,0 +1,148 @@
+main.news.container
+    .news__title Все новости
+    .news__breadcrumbs Главная / Новости
+    .news__filter
+        .news__calendar
+            svg.cal-icon
+                use(xlink:href="images/sprite.svg#cal") 
+            input#calendar(type="text", value="")
+
+        //- Если добавить category класс disabled-el, он перестанет быть доступен
+        .news__category.category
+            .category__header.more
+                span.category__current Выбрать рубрику
+            .category__body
+                .category__item Медицина
+                .category__item.disabled-item Общество 
+                .category__item Коммуналка
+                .category__item Политика
+                .category__item Спорт
+                .category__item.disabled-item Вектор развития
+            
+
+    section.news__list
+        .news__item
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-1.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Медицина 
+                        span.news__item-tag Общество
+                    .news__item-date 02/02/2021
+                .news__item-title Благодаря поддержке предпринимателей. Златоустовские поликлиники оснастили холодильными установками для хранения вакцины
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext") 
+            
+        .news__item
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-2.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Медицина 
+                    .news__item-date 02/02/2021
+                .news__item-title Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  Роддом Златоуста вновь откроет свои двери 8 февраля
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext") 
+
+        .news__item
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-3.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Коммуналка 
+                    .news__item-date 02/02/2021
+                .news__item-title Осторожно, сосульки! Оттепель на этой неделе привела к тому, что на крышах многих домов образовались опасные ледяные наросты
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext") 
+
+        .news__item
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-4.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Политика
+                    .news__item-date 02/02/2021
+                .news__item-title В четыре раза меньше вопросов, чем обычно. В Златоусте прошло первое в 2021-м году Собрание депутатов
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext") 
+
+        .news__item
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-5.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Коммуналка 
+                    .news__item-date 02/02/2021
+                .news__item-title В Златоусте сотрудники теротдела проверят магазин, из которого выбрасывали строительный мусор на контейнерную площадку
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext") 
+
+        .news__item
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-6.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Общество 
+                    .news__item-date 02/02/2021
+                .news__item-title ДЧ: Первое Собрание депутатов 2021 года: планируется работа на весь год
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext") 
+
+        .news__item.wide-anounce
+            .news__item-img
+                a(href="news-detailed.html", target="_blank")
+                    img(src="images/news/news-2.png", alt="Картинка для анонса")
+            .news__item-info
+                .news__item-meta
+                    .news__item-tags
+                        span.news__item-tag Медицина 
+                    .news__item-date 02/02/2021
+                .news__item-title Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  Роддом Златоуста вновь откроет свои двери 8 февраля
+                .news__text Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят...
+                a.news__item-link(href="news-detailed.html", target="_blank")
+                    svg.ext-arrow
+                        use(xlink:href="images/sprite.svg#ext")
+
+    .news__nav
+        .news__nav-arrow.left
+            a(href="#")
+                svg.ext-arrow.inactive
+                    use(xlink:href="images/sprite.svg#nav-arr-l")
+        .news__nav-numbers
+            span.news__nav-number.active
+                a(href="#") 1
+            span.news__nav-number 
+                a(href="#") 2
+            span.news__nav-number
+                a(href="#") 3
+            span.news__nav-number 
+                a(href="#") 4
+            span.news__nav-number ...
+            span.news__nav-number 
+                a(href="#") 123
+        .news__nav-arrow.right
+            a(href="#")
+                svg.ext-arrow
+                    use(xlink:href="images/sprite.svg#nav-arr-r")
+
+
+
+

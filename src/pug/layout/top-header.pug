@@ -1,0 +1,74 @@
+header
+  .container.topWrap
+    .row.inline
+      .first-header
+        a.logo(href='/' style='background-image: url(/local/svg/flogo.svg)')
+          span.slogan Качество в каждой детали
+      .topPhoneWrap.topSocial
+        a.social.telegram(href='https://telegram.im/@svetlanas174' onclick="yaCounter64599088.reachGoal('telegram')" target='_blank')
+        a.social.viber(href='viber://chat?number=79507265653' target='_blank' onclick="yaCounter64599088.reachGoal('viber')")
+        a.social.whatsapp(href='https://wa.me/79507265653' target='_blank' onclick="yaCounter64599088.reachGoal('whatsapp')")
+      .topPhoneMainWrap
+        .topPhoneWrap.topPhone.phone_1
+          a.phone(href='tel:+73512155940') 8 (351) 215-59-40
+          a.cheaper(data-toggle='modal' data-target='#universal_form' data-formid='290852') заказать обратный звонок
+        .topPhoneWrap.topPhone.phone_2
+          a.phone(href='tel:+79507265653') 8 (950) 726-56-53
+          a.phone(href='tel:+79028600660') 8 (902) 860-06-60
+          a.email(href='mailto:mail@kranzapchasti.ru') mail@kranzapchasti.ru
+  .menuTop
+    menu.menuCont.new.container
+      li
+        a(href='/heavy/') Спецтехника
+      li
+        a(href='/spares/') Запчасти
+      li
+        a(href='/making/') Изготовление
+      li
+        a(href='/foundry/') Литье
+      li
+        a(href='/repair/') Ремонт
+      li
+        a(href='/contacts/') Контакты
+      li.itemSearch
+        .mobile_menu_toggler Меню
+        #btnCart.cartOnTop
+          span.itemCountOnCart 2
+        form.searchMenu.formSearch(method='post' action='/search/')
+          input#btnSearch.search(type='text' name='search' placeholder='Поиск по каталогу')
+        #blockSearchResalt
+        #basket
+          .elements.basketTable.itemTechs
+            .element(data-id='392737')
+              .eTitle
+                .photo(style="background-image: url('/cache/56710/s.jpg')")
+                a.cTitle(href='/spares/zapchasti_dlya_kozlovykh_kranov_kks_10_kk_12_5_lt_62_kks_30_kks_32_ks_50_42/zapchasti_dlya_kozlovogo_krana_kks_10_kk_12_5/podema_gruza_kozlovogo_krana_kks_10/reduktor-rm-500-podem-gruza-kozlovogo-krana860/')
+                  h2 Редуктор цилиндрический двухступенчатый РМ 500 (подъем груза) козлового крана
+              .articule РМ-500-31
+              .button
+                .basketItemCount
+                  input(type='text' name='count' value='1')
+                  |  шт.
+                .price
+                  span от 78 000 руб.
+                  span от 78 000 руб./шт.
+                .remove(onclick='removeProduct(392737)')
+            .element(data-id='440585')
+              .eTitle
+                .photo(style="background-image: url('/cache/57450/s.jpg')")
+                a.cTitle(href='/spares/stekla_dlya_spetstekhniki/stekla_dlya_ekskavatorov/stekla_dlya_ekskavatora_komatsu/stekla-dlya-ekskavatorov-komatsu-serii-6/steklo_lobovoe_verkhnee_20y_54_38122_dlya_komatsu_pc200_6_pc300_6_pc400_6_20y_54_38121/')
+                  h2
+                    | Стекло лобовое верхнее 20Y-54-38122 для Komatsu PC200-6, PC300-6, PC400-6 (20Y-54-38121)
+              .articule 20Y-54-38122
+              .button
+                .basketItemCount
+                  input(type='text' name='count' value='1')
+                  |  шт.
+                .price цена по запросу
+                .remove(onclick='removeProduct(440585)')
+          .basket-footer
+            a.btn-red(onclick='clearCart()' href='javascript:;') Очистить корзину
+            span#cartSum
+              span Итого: 
+              | ~78 000 руб.
+            a.btn.btn-default(href='/cart/') Оформить заказ

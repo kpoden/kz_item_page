@@ -1,0 +1,80 @@
+.catalog__main
+    padding: 50px 30px
+    position: fixed
+    z-index: 10000
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #fff
+    overflow-y: auto
+    opacity: 0
+    visibility: hidden
+    transition: .2s
+
+    
+
+
+    .catalog__title
+        padding-bottom: 10px
+        +mw(410)
+            padding-bottom: 0
+
+
+    .catalog__subtitle
+        padding-top: 25px
+        padding-bottom: 15px
+
+    .catalog__list
+        display: grid
+        column-gap: 50px
+        row-gap: 20px
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: auto
+
+        +mw(890)
+            grid-template-columns: repeat(3, 1fr)
+            column-gap: 30px
+        +mw(580)
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 10px
+
+        +mw(410)
+            grid-template-columns: repeat(1, 1fr)
+            row-gap: 5px
+
+
+
+    .catalog__item
+        display: grid
+        padding-bottom: 20px
+        +mw(410)
+            padding-bottom: 0px
+
+    .catalog__item > a
+        font-weight: 900
+        padding-bottom: 10px
+        font-size: 20px
+        +mw(410)
+            padding-bottom: 0px
+            font-weight: 500
+
+    .catalog__item > img
+        height: 80px
+        +mw(410)
+            display: none
+
+    .catalog__sublist
+        +mw(410)
+            display: none
+
+    .catalog__subitem
+        padding-bottom: 5px
+
+        a
+            &:hover
+                color: $orange
+
+.catalog__main.cat-show
+    opacity: 1
+    visibility: visible

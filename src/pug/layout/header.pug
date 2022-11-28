@@ -1,0 +1,39 @@
+header
+    .container.header-wrap
+        .header__left
+            .header__logo
+                a.header__logo-link(href="/")
+                    span.header__logo-text Качество в каждой детали
+
+            .header__soc
+                a.header__soc-icon.tg.below(href="https://telegram.im/@svetlanas174" onclick="yaCounter64599088.reachGoal('telegram')" target="_blank" data-tooltip="Написать в Telegram")
+                a.header__soc-icon.vb.below(href="viber://chat?number=79507265653" target="_blank" onclick="yaCounter64599088.reachGoal('viber')" data-tooltip="Написать в Viber")
+                a.header__soc-icon.wa.below(href="https://wa.me/79507265653" target="_blank" onclick="yaCounter64599088.reachGoal('whatsapp')" data-tooltip="Написать в Whatsapp")
+        
+
+        
+                button.header__phone-btn.btn.below(data-tooltip="Заказать звонок")
+                        
+        
+            //- .header__email
+            //-     span.header__email-title Напишите нам на почту:
+            //-     span.copy-email.below.copyText(data-tooltip="Скопировать Email")
+            //-     a.email(href="mailto:mail@kranzapchasti.ru") mail@kranzapchasti.ru
+
+        .header__right
+            .header__phones
+                .header__phone.left
+                    a.phone(href="tel:+73512155940") 8 (351) 215-59-40
+                    .header__email
+                        span.copy-email.below.copyText(data-tooltip="Скопировать Email")
+                        a.email(href="mailto:mail@kranzapchasti.ru") mail@kranzapchasti.ru
+                .header__phone
+                    a.phone(href="tel:+79507265653") 8 (950) 726-56-53
+                    a.phone(href="tel:+79028600660") 8 (902) 860-06-60
+
+            .alert-msg Текст скопирован в буфер обмена!
+            
+
+    include ../layout/search.pug
+
+

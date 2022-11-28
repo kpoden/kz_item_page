@@ -1,0 +1,114 @@
+section.item.container 
+    include ../layout/breadcrumbs.pug
+    .item__wrapper.wrapper.item
+        h1.item__header Клапан прямого действия MCD 32/2202-PS 32.011.115 направляющий
+
+        section.item__main
+            
+            
+            .item__display
+                .item__slider.slider
+                    .slider__nav 
+                        .slider__nav-item
+                            img(src="images/play2.png", alt="Видео")
+                        .slider__nav-item
+                            img(src="images/item-images/1.jpg", alt="Превью изображения")
+                        .slider__nav-item
+                            img(src="images/item-images/2.png", alt="Превью изображения")
+                        .slider__nav-item
+                            img(src="images/item-images/3.jpg", alt="Превью изображения")
+                        .slider__nav-item
+                            img(src="images/item-images/4.jpg", alt="Превью изображения")
+                        .slider__nav-item
+                            img(src="images/item-images/5.jpg", alt="Превью изображения")
+                        .slider__nav-item
+                            img(src="images/item-images/6.jpg", alt="Превью изображения")
+
+
+                    .slider__main
+                        .slider__img-wrap
+                            //iframe(width="100%", height="100%", src="https://www.youtube.com/embed/34Na4j8AVgA", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                        .slider__img-wrap
+                            img.slider__img(src="images/item-images/1.jpg", alt="Фото товара")
+                        .slider__img-wrap
+                            img.slider__img(src="images/item-images/2.png", alt="Фото товара")
+                        .slider__img-wrap
+                            img.slider__img(src="images/item-images/3.jpg", alt="Фото товара")
+                        .slider__img-wrap
+                            img.slider__img(src="images/item-images/4.jpg", alt="Фото товара")
+                        .slider__img-wrap
+                            img.slider__img(src="images/item-images/5.jpg", alt="Фото товара")
+                        .slider__img-wrap
+                            img.slider__img(src="images/item-images/6.jpg", alt="Фото товара")
+
+
+                    .slider__arrows
+                        .slider__arrow-left
+                        .slider__arrow-right
+
+            .item__info
+                .item__info-main
+                    //- span.item__info-article Арт. 32.011.015
+                    .item__info-article-wrap 
+                        span.item__info-article Арт.
+                        select#article(name="article", class="item__info-article") 
+                            option 32.011.015
+                            option 32.011.016
+                    span.item__info-available В наличии
+                    .item__info-link
+                        a(href="#")
+                            svg.item__info-icon
+                                use(xlink:href="images/sprite.svg#star")
+                            span.item__info-text Отзывы
+                    .item__info-link      
+                        a(href="#")
+                            svg.item__info-icon
+                                use(xlink:href="images/sprite.svg#pencil") 
+                            span.item__info-text Написать менеджеру
+                    .item__info-link
+                        a(href="#") 
+                            svg.item__info-icon.lorry-icon
+                                use(xlink:href="images/sprite.svg#lorry")
+                            span.item__info-text Доставка
+
+                    .item__info-price-wrap 
+                        span.item__info-preprice от 
+                        span.item__info-price 14700 &#8381;
+                        button.btn.btn-fav.btn(data-tooltip="Добавить в избранное")
+                            svg.btn-fav-icon
+                                use(xlink:href="images/sprite.svg#book")
+                
+
+                    .item__info-cart.btnCart
+                        
+                        button.btn.btn-cart.one-click
+                            svg.btn-cart-icon
+                                use(xlink:href="images/sprite.svg#click")
+                            svg.btn-cart-icon--checked
+                                use(xlink:href="images/sprite.svg#check2")
+                            span.btn-cart-text Купить в 1 клик
+                            span.btn-cart-text--checked Успешно
+                            
+                        button.btn.btn-cart
+                            svg.btn-cart-icon
+                                use(xlink:href="images/sprite.svg#cart")
+                            svg.btn-cart-icon--checked
+                                use(xlink:href="images/sprite.svg#check2")
+                            span.btn-cart-text В корзину
+                            span.btn-cart-text--checked Успешно
+
+                        
+
+
+
+                .item__info-side
+                    .item__info-logo
+                        img(src="images/cat.png", alt="Логотип производителя")
+
+                    .item__info-sidelinks
+                        a(href="#") Задать вопрос
+                        br
+                        a(href="#") Заказать звонок
+
+
+    include ../layout/description.pug

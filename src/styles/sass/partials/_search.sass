@@ -1,0 +1,168 @@
+.header-bottom-wrapper
+    display: flex
+    align-items: center
+    background: #ffffff
+    padding-bottom: 3px
+
+.header-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    
+
+.catalog-btn
+    display: flex
+    align-items: center
+    cursor: pointer
+    border: 1px $light-grey solid
+    padding: 5px 15px
+
+    +mw(920)
+        padding: 5px
+    
+    &:hover
+        border: 1px $orange solid
+    &:hover .catalog-btn__icon
+        fill: $orange
+    &:hover .catalog-btn__text
+        color: $orange
+
+
+    &__icon
+        width: 30px
+        height: 28px
+        margin-right: 5px
+        transition: .2s
+        
+        
+    &__text
+        font-size: 18px
+        font-weight: 700
+        font-weight: 500
+        transition: .2s
+
+        +mw(920) 
+            display: none
+    
+
+.formSearch
+    max-width: 220px
+    margin-left: auto
+    margin-right: 10px
+
+    +mw(920)
+        max-width: unset
+
+    +mw(840)
+        width: 100%
+        padding-left: 10px
+
+    +mw(600)
+        margin-left: 0px
+
+    label 
+        position: relative
+        
+    .search
+        width: 100%
+        font-size: 18px
+        padding: 10px 15px
+        border: 1px solid $light-grey
+        border-radius: 8px
+        position: relative
+        padding-right: 40px
+        height: 40px
+        
+
+        
+
+
+    .search-btn
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)        
+        width: 35px
+        height: 38px
+        cursor: pointer
+        background: url(../images/search.svg) no-repeat
+        background-position: center
+        opacity: 0.7
+        transition: .2s
+        &:hover
+            opacity: 1
+
+.cart-btn-top 
+    padding: 0px 20px 0px 25px
+    margin-left: 0px
+    background-color: #e4e4e4
+    text-align: right
+    position: relative
+    transition: .2s
+    cursor: pointer
+    text-align: left
+    font-weight: 500
+    font-size: 17px
+    font-family: MyriadPro, sans-serif
+    height: 40px
+    +mw(600)
+        min-height: 43px
+        min-width: 43px
+        padding: 0
+    
+
+    &:hover .cart-btn-top__icon
+        fill: $orange
+    &:hover
+        color: $orange
+
+    &__icon
+        position: absolute
+        left: 9px
+        top: 52%
+        transform: translateY(-50%)
+        transition: .2s
+        height: 24px
+        width: 24px
+        display: block
+        
+
+    &__text
+        display: none
+        +mw(600)
+            display: none
+        
+    .itemCountOnCart
+        position: absolute
+        top: 0px
+        left: 25px
+        padding: 0
+        color: #ffffff
+        display: block
+        width: 18px
+        height: 18px
+        line-height: 16px
+        border-radius: 50%
+        background: #e93838
+        font-weight: normal
+        text-align: center
+        border: 1px solid transparent
+        font-size: 12px
+
+
+
+
+    
+
+
+
+        
+
+
+
+        
+        
+
+
+    

@@ -1,0 +1,153 @@
+.carousel
+    display: flex
+    justify-content: space-between
+    padding-left: 20px
+    padding-right: 15px
+    padding-top: 20px
+    padding-bottom: 50px
+    margin: 0 auto
+
+    &__item
+        border: 1px solid #dddddd
+        border-radius: 10px
+        max-width: 95%
+        margin: 0 auto
+        padding: 15px 20px
+        
+        
+
+    &__img
+        height: 150px
+        overflow: hidden
+        position: relative
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            // width: 100%
+            max-width: 240px
+            max-height: 150px
+            width: auto !important
+
+    &__article
+        display: block
+        font-size: 12px
+        padding-top: 10px
+
+    &__name
+        padding-top: 12px
+        padding-bottom: 15px
+        display: block
+        height: 85px
+        overflow: hidden
+        position: relative
+        background: #fff
+        z-index: 1000
+        font-weight: 900
+        transition: .5s
+        cursor: pointer
+
+        &:hover .spoiler
+            display: none
+
+        &:hover   
+            overflow: visible
+
+    &__name-text
+        color: #222222
+        transition: .5s
+        display: block
+        background: #ffffff
+        
+        &:hover
+            color: #000000
+
+
+    .spoiler
+        width: 100%
+        height: 25px
+        display: block
+        position: absolute
+        bottom: 0
+        background: #ffffff;
+        background: linear-gradient(0deg, #ffffff 0%, #ffffffab 35%, #ffffff00 100%);
+
+
+
+    &__price-wrap
+        padding-bottom: 15px
+        display: flex
+        align-items: flex-end
+        justify-content: flex-start
+
+            
+
+        &:first-child
+            margin-right: 0
+
+    &__preprice
+        position: relative
+        bottom: 3px
+
+    &__price
+        font-size: 30px
+        font-weight: 700
+
+    &__cart
+
+    &__price-wrap > .btn-fav
+        margin-left: auto
+
+
+    // стили для slick slider
+    .slick-list
+        padding-bottom: 5px
+        margin-left: 7px
+        
+        
+
+    .slick-arrow
+        width: 20px
+        height: 40px
+        background-color: #999
+        opacity: 0.8
+        transition: .2s
+        
+        &:before
+            content: "" !important
+            width: 20px
+            height: 20px
+            display: block
+            background: transparent
+            border-width: 0px 0px 3px 3px
+            border-style: solid
+            border-color: #ffffff
+            position: absolute
+            top: 50%
+            transform-origin: top
+
+        &:hover
+            opacity: 1
+
+    .slick-prev
+        left: 0px 
+
+        &:before
+            left: 6px
+            transform: rotate(45deg) translateY(-50%)
+
+    .slick-next
+        right: 0px
+
+        &:before
+            right: 6px
+            transform: rotate(-135deg) translateY(-50%)
+
+
+.carousel__watched
+    .slick-track
+        margin: 0
+
+
+        

@@ -1,0 +1,693 @@
+.feedbackBox {
+    display: block;
+}
+.feedbackBox a {
+    color: $orange; 
+    text-decoration: underline;
+    white-space: pre;
+}
+.feedbackBox a:hover {
+    text-decoration: none;
+}
+main #feedback {
+    padding-top: 40px;
+    margin: 0 auto;
+}
+.feedback > div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+form.base_form.mod1 .group1 > .controls, form.base_form.mod1 .group5 > .controls {
+    position: relative;
+}
+select.freeback-product {
+    background: #fff;
+}
+select.freeback-product, form.base_form.mod1 .group4 textarea, form.base_form.mod1 .group4 input, form.base_form.mod1 .group5 input, form.base_form.mod1 .group1 select, form.base_form.mod1 .group5 select {
+    width: 100%;
+}
+select.freeback-product, form.base_form.mod1 .group1 input, form.base_form.mod1 .group1 select, form.base_form.mod1 .group5 select, form.base_form.mod1 .group5 input, form.base_form.mod1 .group4 textarea, form.base_form.mod1 .group4 input, form.base_form.mod1 textarea {
+    border: 1px solid #999 !important;
+    padding: 15px;
+    font-size: 15px;
+    color: #0d1c30;
+    line-height: 18px;
+    resize: none;
+}
+form.base_form.mod1 * input.btn-default {
+    border: none !important;
+}
+form.base_form.mod1 .group4 input {
+    /*margin-bottom: 2%;*/
+}
+form.base_form.mod1 .group4 .subject,
+form.base_form.mod1 .group4 textarea {
+    margin-top: 2%;
+}
+form.base_form.mod1 .group1 input:focus, form.base_form.mod1 textarea:focus {
+    border-color: #0d1c30 !important;
+}
+.feedbackBox form .btn {
+    background-color: $orange !important;
+    color: #fff;
+    font-weight: 700;
+}
+
+form.base_form.mod1 textarea {
+    width: 100%;
+    height: 115px;
+}
+form.base_form.mod1 .group1 .prod {
+    width: 100%;
+}
+form.base_form.mod1 .group1 .count input {
+    padding-left: 110px;
+}
+form.base_form.mod1 .group4 .subject {
+    position: relative;
+}
+form.base_form.mod1 .group4 label,
+form.base_form.mod1 .group1 .count label {
+    position: absolute;
+    line-height: 50px;
+    padding: 0 10px;
+    color: #777;
+    text-transform: uppercase;
+}
+form.base_form.mod1 .group1 .count {
+    width: 200px;
+    margin: 0 0 2% 2% !important;
+}
+form.base_form.mod1 .group1 > .controls:nth-child(1) {
+    text-align: left;
+    margin-right: 2% !important;
+}
+
+form.base_form.mod1 .group1 > .controls:nth-child(2) {
+    text-align: center;
+}
+
+form.base_form.mod1 .group1 > .controls:nth-child(3) {
+    text-align: right;
+    margin-left: 2% !important;
+}
+
+form.base_form.mod1 .group1 > .controls input {
+    width: 100%;
+}
+
+form.base_form.mod1 input:focus, form.base_form.mod1 textarea:focus {
+    border: 1px solid #464646;
+}
+
+form.base_form.mod1 .group1 > .controls, form.base_form.mod1 .group4 > .controls, form.base_form.mod1 .group5 > .controls {
+    min-width: 32%;
+    margin: 0 0 2% !important;
+}
+
+form.base_form.mod1 .group1 > .controls.count {
+    margin-left: 2% !important;
+}
+form.base_form.mod1 .group1 > .controls.prod {
+    margin: 0 0 2% !important;
+}
+
+form.base_form.mod1 .group1,
+form.base_form.mod1 .group2 {
+    margin: auto;
+}
+
+form.base_form.mod1 input[type="file"] {
+    display: none;
+}
+
+.attachFiles > label {
+    color: #0d1c30;
+    text-transform: uppercase;
+}
+
+form.base_form.mod1 .group3 > * {
+    display: inline-block;
+}
+form.base_form.mod1 .group3 > .button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 0 0 !important;
+}
+
+form.base_form.mod1 .group3 {
+    margin: auto;
+    text-align: center;
+}
+
+form.base_form.mod1 .group3 > div:nth-child(1),
+form.base_form.mod1 .group3 > div:nth-child(2) {
+    margin: 10px 2%;
+}
+
+form.base_form.mod1 .group3 .submit {
+    padding: 0 32px;
+    line-height: 36px;
+    font-size: 14px;
+}
+form.base_form.mod1 .group3 .submit:hover {
+    background-color: #0d1c30 !important;
+}
+
+.formWrap.mod1
+> * {
+    display: block;
+}
+
+.formWrap.mod1 .feedback_title {
+    margin-bottom: 2%;
+}
+.formWrap.mod1 h2 {
+    margin: 0 !important;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal !important;
+}
+
+.formWrap.mod1 .formUnderHeader {
+    text-align: center;
+    font-size: 14px;
+    color: #0d1c30;
+}
+.attachFiles span {
+    color: $orange;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.attachFiles span:hover {
+    text-decoration: none;
+}
+.attachFiles, .agreementWrap {
+    font-size: 14px;
+}
+/*
+.modal-product .modal-dialog {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.modal-product.mini .group1 > .controls {
+    width: 100% !important;
+}
+.modal-product.mini .group1 {
+    display: block !important;
+}
+.modal-product.mini .modal-dialog {
+    min-width: 600px;
+}*/
+#order .close {
+    line-height: 0 !important;
+}
+
+div#request-checkout .close, div#request-call .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 36px !important;
+    height: 36px;
+    font-size: 44px;
+    z-index: 4;
+    line-height: 26px;
+}
+
+.modal-product .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 36px !important;
+    height: 36px;
+    font-size: 44px;
+    z-index: 4;
+    line-height: 36px;
+    padding: 0;
+}
+
+form.base_form .controls .form-error {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    text-align: left;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #d08c8c;
+}
+
+form.base_form .controls.center .form-error {
+    left: 3%;
+}
+
+form.base_form .controls.right .form-error {
+    left: 6%;
+}
+
+.agreementWrap {
+    position: relative;
+}
+
+form.base_form .controls.left .form-error {
+    left: 0;
+}
+#auth_form form.base_form.mod1.exit .group1 > .controls {
+    line-height: 40px;
+}
+#auth_form form.base_form.mod1 .group1 > .controls {
+    margin-bottom: 0 !important;
+}
+#auth_form form.base_form.mod1 .group1 > .controls input {
+    padding: 10px !important;
+}
+.agreementInput {
+    display: none;
+}
+
+.agreementWrap input {
+    margin: 2px 5px 0 0;
+    vertical-align: top;
+}
+.agreementWrap label {
+    cursor: pointer;
+    font-weight: 400;
+    color: #0d1c30;
+}
+
+input.formFileInput {
+    display: none;
+}
+
+#request .modal-body > div.formWrap {
+    width: 100%;
+}
+#order .modal-content {
+    padding: 20px;
+}
+
+#order .modal-head {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#order .item_name .key {
+    font-weight: 700;
+}
+
+#order .modal-body {
+    padding: 0;
+    margin-top: 20px;
+}
+
+#order .item_name .key {
+    font-weight: 700;
+}
+
+#order .modal-body button {
+    display: block;
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: #1551a1;
+    text-transform: uppercase;
+}
+.attachFiles input[type="file"] {
+    display: none;
+}
+
+.feedback input[type="text"] {
+    border-radius: $btn-border-radius;
+}
+
+.feedback textarea{
+    border-radius: $btn-border-radius;
+}
+
+.formWrap .h2, form .h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 27px;
+    text-align: center;
+    display: block;
+    color: #0d1c30;
+}
+#request-checkout {
+    pointer-events: none;
+}
+.modal-content {
+    pointer-events: painted;
+    border: 1px solid #eee;
+}
+.modal-content a {
+    color: #1551a1;
+    font-weight: bold;
+    white-space: pre;
+}
+html.jivo-site-full-block {
+    position: relative !important;
+}
+#citySearch {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cityWrap {
+    position: relative;
+}
+
+.cityWrap .btn {
+    height: 40px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.cityWrap .btn:before {
+    display: block;
+    content: "";
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.cityWrap .btn.open:before {
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 4px 5px 4px;
+}
+
+.cityWrap .city {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px 5px 10px;
+    outline: none;
+    border: 1px solid #1551a1;
+    height: 40px;
+}
+
+.cityList {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height: 328px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-top: -1px;
+}
+.current .cityList {
+    display: none;
+}
+
+.cityList li.current {
+    background: #5897fb;
+    color: #fff;
+}
+
+.cityList li:not(:first-child) {
+
+}
+
+.cityList li {
+    cursor: pointer;
+    padding: 5px 20px 5px 10px;
+    line-height: 30px;
+    border-top: 1px solid #eee;
+}
+
+.cityList li:first-child {
+    border: none;
+}
+
+#cityColumm {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#cityColumm h3 {
+    font-size: 18px;
+    padding: 10px 0 0;
+}
+#cityColumm span {
+    width: 18%;
+    line-height: 40px;
+    font-size: 18px;
+    color: #1551a1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#cityColumm span:hover {
+    text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+    form.base_form.mod1 .group5 {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+    form.base_form.mod1 .group1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    #request-call .group1 > .controls {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 1279px) {
+    #request .modal-dialog {
+        min-width: initial;
+        width: 95%;
+    }
+    .formWrap.mod1 .h2 {
+        font-size: 25px;
+    }
+
+    form.base_form.mod1 .group3 > div:nth-child(1), form.base_form.mod1 .group3 > div:nth-child(2) {
+        margin-right: 2%;
+    }
+
+    form.base_form.mod1 .group3 > div:nth-child(1), form.base_form.mod1 .group3 > div:nth-child(2) {
+        margin-right: 2%;
+    }
+
+    form.base_form.mod1 textarea {
+        height: 105px;
+    }
+
+    form.base_form .controls .form-error {
+        line-height: 9px;
+        font-size: 11.5px;
+    }
+}
+@media screen and (max-width: 997px) {
+    #request .modal-dialog {
+        min-width: initial;
+        width: 95%;
+    }
+
+    #request .modal-content {
+        padding: 3% 0% 1%;
+    }
+
+    #request .agreementWrap span {
+        max-width: 200px;
+        font-weight: 400;
+        font-weight: 400;
+    }
+
+    #request .formWrap.mod1 .h2 {
+        font-size: 18px;
+    }
+
+    #request .agreementWrap label {
+        margin-bottom: initial;
+    }
+
+    #request form.base_form.mod1 .group3 > div:nth-child(1), #request form.base_form.mod1 .group3 > div:nth-child(2) {
+        margin-right: 2%;
+    }
+    form.base_form.mod1 .group1 .count {
+        margin: 2% 0 0 !important;
+    }
+    form.base_form.mod1 .group1 > .controls {
+        width: 100%;
+    }
+
+    form.base_form.mod1 .group1 > .controls input {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .formWrap.mod1 .h2 {
+        font-size: 20px;
+    }
+
+    .formWrap.mod1 {
+        margin-top: 20px;
+    }
+
+    .formWrap.mod1 > span.formUnderHeader {
+        margin: 5px 0 8px;
+        font-size: 14px;
+    }
+
+    .agreementWrap span {
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .modal form.base_form.mod1 .group3 > div:nth-child(1) {
+        width: 100%;
+    }
+    .modal form.base_form.mod1 .group3 > div:nth-child(2),
+    .modal form.base_form.mod1 .group3 > div:nth-child(3) {
+        display: inline-block;
+    }
+
+    form.base_form .controls .form-error {
+        font-size: 10px;
+    }
+
+    form.base_form.mod1 .group3 {
+        margin-top: 15px;
+    }
+    .agreementWrap label {
+        margin-bottom: 2px;
+    }
+}
+@media screen and (max-width: 767px) {
+    main #feedback {
+        padding-top: 20px;
+    }
+    form.base_form.mod1 .group1 > .controls, form.base_form.mod1 .group5 > .controls {
+        width: 100%;
+    }
+    form.base_form.mod1 .group3 .submit {
+        padding: 2px 10px 0 !important;
+    }
+    form.base_form.mod1 .group1 > .controls:nth-child(3) {
+        margin-left: 0 !important;
+    }
+    .attachFiles span {
+        font-size: 12px !important;
+    }
+    .modal form.base_form.mod1 .group3 > div:nth-child(1) {
+        width: 100% !important;
+    }
+    form.base_form.mod1 .group3 {
+        margin: 0 !important;
+    }
+    form.base_form.mod1 .group3 > * {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+
+    #request form.base_form.mod1 .group3 > div:nth-child(1), #request form.base_form.mod1 .group3 > div:nth-child(2), #request form.base_form.mod1 .group3 > div:nth-child(3) {
+        display: block;
+        text-align: left;
+        margin-right: initial;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #request .agreementWrap span {
+        max-width: initial;
+    }
+
+    #request .modal-body {
+        padding: 3% 5% 3%;
+    }
+    form.base_form .controls .form-error {
+        left: 0 !important;
+    }
+
+    form.base_form.mod1 .group1 {
+        margin-bottom: 10px;
+    }
+    .agreementWrap span {
+        max-width: 300px;
+        font-size: 9px;
+        vertical-align: 2px;
+    }
+
+    .attachFiles > label {
+        vertical-align: -4px;
+    }
+
+    form.base_form.mod1 .group3 {
+        position: relative;
+        font-size: 0;
+        min-height: 50px;
+    }
+
+    .agreementWrap label span.form-error.help-block {
+        position: absolute;
+        bottom: -17px !important;
+        top: initial !important;
+        left: 7px !important;
+    }
+
+    .agreementWrap label {
+        font-size: 17px !important;
+        vertical-align: text-top;
+    }
+    .formWrap.mod1 .h2 {
+        font-size: 18px;
+    }
+
+    #request .modal-dialog {
+        width: initial;
+        min-width: initial;
+    }
+
+    #request .modal-body > div.formWrap {
+        width: 100%;
+        margin-right: initial;
+    }
+
+    #request .agreementWrap {
+        position: initial;
+    }
+
+    #request form.base_form.mod1 .group3 > div:nth-child(2) .attachFiles {
+        font-size: 10px;
+    }
+    .formUnderHeader {
+        font-size: 16px;
+    }
+}
+
+#description {
+    .phone, .email { 
+        text-decoration: underline;
+        color: $orange;
+        font-weight: 700;
+    }
+
+    p {
+        padding-bottom: 20px;
+        line-height: 1.4em;
+    }
+}
